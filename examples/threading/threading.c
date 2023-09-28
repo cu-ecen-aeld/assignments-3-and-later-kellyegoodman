@@ -60,6 +60,8 @@ bool start_thread_obtaining_mutex(pthread_t *thread, pthread_mutex_t *mutex,int 
      *
      * return true if successful.
      *
+     * this method should only start the thread, do not join, free, etc
+     *
      * See implementation details in threading.h file comment block
      */
     struct thread_data *t_data = malloc(sizeof(struct thread_data));
